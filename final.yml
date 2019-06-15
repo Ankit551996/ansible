@@ -1,0 +1,13 @@
+---
+ - hosts: localhost 
+   tasks:
+    - name: running whoami command
+      command: whoami
+    - name: insatlling httpd software
+      yum: 
+       name: httpd 
+       state: present
+
+    - name: printing message
+      debug:
+       msg="hello world this is Ansible "

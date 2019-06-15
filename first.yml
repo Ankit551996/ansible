@@ -1,0 +1,6 @@
+---
+ - hosts: localhost 
+   tasks:
+    - command: whoami
+    - shell: cal
+    - yum: name=httpd state=present

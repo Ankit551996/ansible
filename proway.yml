@@ -1,0 +1,7 @@
+---
+ - hosts: localhost 
+   tasks:
+    - name: running whoami command
+      command: whoami
+    - name: insatlling httpd software
+      yum: name=httpd state=present
