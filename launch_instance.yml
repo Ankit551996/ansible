@@ -1,0 +1,12 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: Launching the AWS instance
+      ec2:
+       key_name: awslinux   
+       region: ap-south-1
+       instance_type: t2.micro
+       image: ami-5b673c34
+       count: 1
+       aws_access_key: # put your aws access_key 
+       aws_secret_key: # put as well secret_key

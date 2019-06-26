@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: listing all attached hard disk in local system
+      command: lsblk
+      register: x #that store above command out put in a varibale
+    - name: printing value of x
+      debug: var=x           #that is like print function
